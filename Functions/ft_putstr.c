@@ -6,8 +6,22 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:01:07 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:01:14 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/21 13:48:34 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
 
+void	ft_putchar (char c);
+
+void	ft_putstr (char *str);
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}

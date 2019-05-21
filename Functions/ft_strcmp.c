@@ -6,8 +6,23 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:07:30 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:07:34 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/21 13:59:03 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_strcmp(char *str1, char *str2)
+{
+	int i;
+	int j;
 
+	i = 0;
+	j = 0;
+	while (str1[i] != '\0')
+	{
+		if (str1[i] == str2[i])
+			i++;
+		else
+			return (1);
+	}
+	return (0);
+}
