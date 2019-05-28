@@ -6,8 +6,24 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:05:34 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:05:37 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/28 09:50:49 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+char *ft_strchr(const char *str, int c)
+{
+	int i;
+
+	i = 0;
+	while(str[i] != '\0')
+	{
+		if(str[i] == c)
+		{
+			return (char *)&str[i];
+		}
+		i++;
+	}
+	return (NULL);
+}
