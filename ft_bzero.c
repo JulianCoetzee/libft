@@ -6,16 +6,17 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:54:10 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/27 11:56:36 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/29 10:51:01 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 void ft_bzero(void *s, size_t n)
 {
 	unsigned char *str;
-	int i;
+	unsigned int i;
 
 	str = (unsigned char *)s;
 	i = 0;
