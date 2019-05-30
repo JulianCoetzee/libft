@@ -6,18 +6,22 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:01:35 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/21 13:51:39 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/30 13:18:39 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h" 
+
+size_t	ft_strlen(const char *str)
 {
-	int i;
+	size_t i;
+	if(!*str)
+		return (0);
 
 	i = 0;
 	while(str[i] != 0)
 	{
 		i++;
 	}
-	return i;
+	return (i);
 }
