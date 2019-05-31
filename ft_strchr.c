@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:05:34 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/29 12:35:25 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/31 12:53:52 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char *ft_strchr(const char *str, int c)
 	int i;
 
 	i = 0;
-	while(str[i] != '\0')
+	while(i <= ft_strlen(str))
 	{
 		if(str[i] == c)
 		{

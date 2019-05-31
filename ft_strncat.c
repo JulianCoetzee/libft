@@ -6,8 +6,26 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:04:16 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:04:25 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/05/31 12:06:53 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.c"
 
+char	*ft_strncat(char *s1, const char *s2, size_t n)
+{
+	size_t i;
+	size_t j;
+
+	i = 0;
+	while (s1[i])
+		i++;
+	j = 0;
+	while (s2[i] && j < n)
+	{
+		s1[i + j] = s2[j];
+		j++;
+	}
+	s1[i + j] = '\0';
+	return (s1);
+}
