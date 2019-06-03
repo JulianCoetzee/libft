@@ -6,7 +6,7 @@
 #    By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/29 10:05:47 by jcoetzee          #+#    #+#              #
-#    Updated: 2019/05/29 10:48:05 by jcoetzee         ###   ########.fr        #
+#    Updated: 2019/06/03 14:54:17 by jcoetzee         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,7 @@ $(NAME): $(OBJ)
 		@ar rc $(NAME) $(OBJ)
 		@echo "$(NAME) created"
 		@ranlib $(NAME)
-		@echo "$(NAME) indexed)"
+		@echo "$(NAME) indexed"
 
 %.o: %.c
 		@gcc $(FLAGS) -c $< -o $@

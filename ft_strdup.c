@@ -10,12 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
 char *ft_strdup(const char *str)
 {
 	char *tmp;
-	size_t i;
 
 	if (!(tmp = (char *)malloc(sizeof(char) * (ft_strlen(str) + 1))))
 		return (NULL);

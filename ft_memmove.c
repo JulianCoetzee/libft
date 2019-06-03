@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-void ft_memmove(void *dst, void const *src, size_t len)
+void	*ft_memmove(void *dst, void const *src, size_t len)
 {
 	char *tmp;
 
-	tmp = (chat *)malloc(sizeof(char) * len);
+	tmp = (char *)malloc(sizeof(char) * len);
 	if (tmp == NULL)
 	{
 		return (NULL);

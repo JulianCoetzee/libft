@@ -6,11 +6,11 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:07:30 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/21 13:59:03 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/03 15:25:54 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *str1, char *str2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
 	int j;
@@ -19,10 +19,10 @@ int	ft_strcmp(char *str1, char *str2)
 	j = 0;
 	while (str1[i] != '\0')
 	{
-		if (str1[i] == str2[i])
+		if (s1[i] == s2[i])
 			i++;
 		else
-			return (1);
+			return (s1[i] - s2[i]);
 	}
 	return (0);
 }

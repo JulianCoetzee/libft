@@ -17,7 +17,7 @@ void	ft_putnbr (int nbr)
 	if (nbr < 0)
 	{
 		ft_putchar ('-');
-		br = nbr * -1;
+		nbr = nbr * -1;
 	}
 	if (nbr >= 10)
 	{

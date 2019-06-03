@@ -18,17 +18,16 @@ int	memcmp(const void *s1, const void *s2, size_t n)
 	char *ns2;
 	size_t i;
 
-	if(!*s1 && !*s2)
+	if(!s1 && !s2)
 		return (0);
 	ns1 = (char *)s1;
 	ns2 = (char *)s2;
 	i = 0;
 	while (i < n)
 	{
-		if (s1[i] != s2[i])
-			return(s1[i] - s2[i]);
+		if (ns1[i] != ns2[i])
+			return(ns1[i] - ns2[i]);
 		i++;
 	}
-	return (s1[i]-s2[i]);
+	return (ns1[i] - ns2[i]);
 }
-
