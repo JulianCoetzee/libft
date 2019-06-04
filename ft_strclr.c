@@ -6,8 +6,20 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:17:55 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:17:59 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/04 14:46:18 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_strclr(char *str)
+{
+	size_t i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		str[i] = '\0';
+		i++;
+	}
+}

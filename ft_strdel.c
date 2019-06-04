@@ -6,8 +6,13 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:17:13 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:17:16 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/04 14:34:01 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_strdel(char **as)
+{
+	ft_memdel((void **)as);
+}
