@@ -6,8 +6,23 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:20:36 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:20:38 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/05 10:55:25 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+int	ft_strequ(char const *s1, char const *s2)
+{
+	size_t i;
+	
+	i = 0;
+	while (s1[i] != '\0' && s2 != '\0')
+	{
+		if (s1[i] == s2[i])
+			i++;
+		else
+			return (0);
+	}
+	return (1);
+}
