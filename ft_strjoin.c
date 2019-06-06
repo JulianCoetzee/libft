@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:22:41 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/05 14:33:56 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/06 11:50:48 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,24 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t i;
+	size_t j;
 	char *js;
 
 	i = 0;
+	j = 0;
 	js = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)) + 1);
-	if (!js)
+	if (js == NULL)
 		return (NULL);
-	while (i < (ft_strlen(s1) + ft_strlen(s2)))
+	while (s1[i] != '\0')
 	{
-		js[i] = ft_strcat(s1, s2)[i];
+		js[i] = s1[i];
 		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		js[i] = s2[j];
+		i++;
+		j++;
 	}
 	js[i] = '\0';
 	return (js);
