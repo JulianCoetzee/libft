@@ -6,8 +6,13 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:24:17 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:24:18 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/07 14:57:52 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+char	*itoa(int n)
+{
+	char *num;
 
+	num = (char *)malloc(sizeof(char)
