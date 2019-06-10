@@ -6,8 +6,14 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:25:15 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/20 13:25:18 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/10 13:12:53 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	ft_putendl(char const *str)
+{
+	ft_putstr(str);
+	ft_putchar('\n');
+}

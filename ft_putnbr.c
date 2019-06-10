@@ -6,26 +6,26 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:25:39 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/21 09:46:17 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/10 13:05:14 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_putchar (char c);
+#include "libft.h"
 
-void	ft_putnbr (int nbr)
+void	ft_putnbr (int n)
 {
-	if (nbr < 0)
+	if (n == -2147483648)
+		ft_putstr("-2147483648");
+	if (n < 0)
 	{
-		ft_putchar ('-');
-		nbr = nbr * -1;
+		ft_putchar('-');
+		ft_putnbr(-n);
 	}
-	if (nbr >= 10)
+	if (n >= 10)
 	{
-		ft_putnbr (nbr / 10);
-		ft_putnbr (nbr % 10);
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
 	}
-	if (nbr < 10)
-	{
-		ft_putchar(nbr + 48);
-	}
+	if (n < 10)
+		ft_putchar(n + '0');
 }
