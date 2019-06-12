@@ -6,11 +6,13 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:10:01 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/29 10:55:50 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/12 11:37:51 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigt(int c)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

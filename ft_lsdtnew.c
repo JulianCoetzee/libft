@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_lsdtnew.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/20 13:04:16 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/12 14:21:56 by jcoetzee         ###   ########.fr       */
+/*   Created: 2019/06/11 13:12:32 by jcoetzee          #+#    #+#             */
+/*   Updated: 2019/06/11 15:03:10 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+struct t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	size_t i;
-	size_t j;
+	struct t_list *new;
 
-	i = 0;
-	while (s1[i])
-		i++;
-	j = 0;
-	while (s2[j] && j < n)
-	{
-		s1[i + j] = s2[j];
-		j++;
-	}
-	s1[i + j] = '\0';
-	return (s1);
-}
+	new = malloc(sizeof(struct t_list));
+	if (new == NULL)
+		return (NULL);
+	new->*content = ft_memcpy(new, *content, conte;
+	new->content_size = content_size;
+	new->next = NULL;

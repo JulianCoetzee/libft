@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:24:17 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/10 12:34:39 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/12 10:32:07 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*itoa(int n)
 	char *num;
 
 	num = (char *)malloc(sizeof(char) * 2);
-	if (num = NULL)
+	if (num == NULL)
 		return (NULL);
 	if (n == -2147483648)
 		return (ft_strcpy(num, "-2147483648"));

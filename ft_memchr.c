@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:56:32 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/30 12:54:50 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/12 10:54:38 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
-	char *nstr;
-	size_t i;
+	char	*nstr;
+	size_t	i;
 
 	nstr = (char *)str;
 	i = 0;

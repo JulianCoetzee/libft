@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:23:58 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/07 14:06:32 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/12 10:44:04 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,6 @@ char			**ft_strsplit(char const *str, char c)
 			splits[j] = ft_strsub(str, s, (i - s));
 		j++;
 	}
-	splits[j] = '\0';
+	splits[j] = NULL;
 	return (splits);
 }

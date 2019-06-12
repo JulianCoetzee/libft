@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:02:45 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/05/30 13:54:18 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/12 10:59:04 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 char	*ft_strcpy(char *dst, const char *src)
 {
 	size_t i;
+
 	if (!*src && !*dst)
 		return (NULL);
-
 	i = 0;
 	while (src[i] != '\0')
 	{

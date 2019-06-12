@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:06:55 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/03 16:25:14 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/12 15:04:57 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ char	*ft_strnstr(const char *stack, const char *ndl, size_t n)
 	while (stack[i] != '\0')
 	{
 		j = 0;
-		while (stack[i + j] == ndl[j] && ndl[j] != '\0' && j < n)
+		while (stack[i + j] == ndl[j] && ndl[j] != '\0' && i < n)
 			j++;
-		if (ndl[j] == '\0' || j == (n - 1))
+		if (ndl[j] == '\0' || i == (n - 1))
 			return ((char *)stack + i);
 		i++;
 	}
