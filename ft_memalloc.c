@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:15:46 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/04 12:49:36 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/13 14:36:24 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memalloc(size_t size)
 
 	f = malloc(size);
 	if (f == NULL)
-		return NULL;
+		return (NULL);
 	ft_bzero(f, size);
 	return (f);
 }
