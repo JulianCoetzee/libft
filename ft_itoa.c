@@ -6,13 +6,13 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:24:17 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/12 10:32:07 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/14 12:59:00 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*itoa(int n)
+char	*ft_itoa(int n)
 {
 	char *num;
 
