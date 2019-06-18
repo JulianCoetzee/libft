@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:18:21 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/13 13:57:51 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 16:12:39 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_striter(char *str, void (*f)(char *))
 {
 	size_t i;
 
+	if (str == NULL)
+		return ;
 	i = 0;
 	while (str[i] != '\0')
 	{

@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:05:57 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/12 14:47:47 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 13:18:37 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strrchr(const char *str, int c)
 	const char	cc = (char)c;
 	char		*r;
 
-	if (str == NULL)
-		return (NULL);
 	i = 0;
 	r = NULL;
 	while (i <= ft_strlen(str))

@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:23:58 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/14 11:35:20 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 16:29:38 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,10 @@ char			**ft_strsplit(char const *str, char c)
 	size_t	s;
 	char	**splits;
 
+	if (!str)
+		return (NULL);
 	i = 0;
 	j = 0;
-	s = 0;
 	if (!(splits = (char **)malloc(sizeof(char *) * (ft_wrdcnt(str, c)) + 1)))
 		return (NULL);
 	while (str[i])

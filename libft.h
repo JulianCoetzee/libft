@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 11:40:02 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/12 11:40:12 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 16:02:03 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-int					ft_atoi(char *str);
+int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);

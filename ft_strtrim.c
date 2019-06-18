@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:23:25 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/14 11:07:41 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 16:21:24 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *str)
 	size_t	k;
 	char	*tstr;
 
+	if (str == NULL)
+		return (NULL);
 	i = 0;
 	j = ft_strlen(str) - 1;
 	k = 0;

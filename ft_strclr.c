@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:17:55 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/04 14:46:18 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 16:10:47 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_strclr(char *str)
 {
 	size_t i;
 
+	if (str == NULL)
+		return ;
 	i = 0;
 	while (str[i] != '\0')
 	{

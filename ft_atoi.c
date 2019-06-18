@@ -6,15 +6,17 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:08:29 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/03 15:41:25 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/18 15:50:21 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(const char *str)
 {
-	long			res;
-	long			sign;
-	unsigned int	i;
+	size_t res;
+	size_t sign;
+	size_t i;
 
 	i = 0;
 	res = 0;
