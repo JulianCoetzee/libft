@@ -6,7 +6,7 @@
 /*   By: jcoetzee <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 13:23:25 by jcoetzee          #+#    #+#             */
-/*   Updated: 2019/06/18 16:21:24 by jcoetzee         ###   ########.fr       */
+/*   Updated: 2019/06/19 16:54:18 by jcoetzee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ char	*ft_strtrim(char const *str)
 		return (ft_strnew(0));
 	while (str[j] == ' ' || str[j] == '\t' || str[j] == '\n')
 		j--;
-	tstr = (char *)malloc(sizeof(char) * (j - i + 2));
-	if (tstr == NULL)
+	if (!(tstr = (char *)malloc(sizeof(char) * (j - i + 2))))
 		return (NULL);
 	while (k < (j - i + 1))
 	{
